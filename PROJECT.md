@@ -77,7 +77,7 @@ prisma.config.ts              # Prisma config with datasource URL
 - Schema: `prisma/schema.prisma` — no `url` in datasource block
 - Config: `prisma.config.ts` — URL goes here with `defineConfig({ datasource: { url } })`
 - Client: Generated to `generated/prisma`
-- Adapter: Must pass `@prisma/adapter-better-sqlite3` to `PrismaClient({ adapter })`
+- Adapter: Must pass `@prisma/adapter-libsql` to `PrismaClient({ adapter })`
 - Commands: `npx prisma db push`, `npx prisma generate`
 
 ## Environment Variables (`.env`)
